@@ -5,6 +5,7 @@ A modern, fully-documented web application that connects animal lovers with adop
 **Status**: ✅ Production Ready | **Version**: 1.0.0 | **Last Updated**: January 2025
 
 ## ⭐ Features
+<img width="2249" height="1321" alt="image" src="https://github.com/user-attachments/assets/8fe07e86-d781-4d08-8e02-da97b01bbd1f" />
 
 ### 🎯 Core Features
 - **Browse Pets**: Beautiful grid/list view with all available adoptable pets
