@@ -1,0 +1,300 @@
+/* ================================
+   Contact Page Styles
+   ================================ */
+
+/* --- Header --- */
+.contact-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background-color: var(--bg-color);
+}
+
+.contact-header h1 {
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.contact-header p {
+    color: var(--text-light);
+    font-size: 1.1em;
+}
+
+/* --- Main Layout --- */
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* --- Card Styles --- */
+.info-card,
+.form-card,
+.volunteer-card {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.info-card h2,
+.form-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* --- Info Card (Get in Touch) --- */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item i {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.contact-item p {
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* --- Form Card Styles --- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.95em;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(91, 80, 163, 0.1);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+}
+
+.btn-secondary:active {
+    transform: scale(0.98);
+}
+
+/* --- Volunteer Section --- */
+.volunteer-card {
+    text-align: center;
+    padding: 50px 40px;
+    margin-top: 40px;
+}
+
+.volunteer-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-weight: 800;
+}
+
+.volunteer-card p {
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 1.05em;
+}
+
+/* --- Form Feedback --- */
+.feedback-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    font-weight: 500;
+}
+
+.feedback-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.feedback-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.feedback-message.loading {
+    background-color: #e2e3e5;
+    color: #383d41;
+    border: 1px solid #d6d8db;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .info-card,
+    .form-card,
+    .volunteer-card {
+        padding: 30px 20px;
+    }
+
+    .contact-header h1 {
+        font-size: 2em;
+    }
+
+    .contact-header p {
+        font-size: 1em;
+    }
+
+    .info-card h2,
+    .form-card h2 {
+        font-size: 1.5em;
+    }
+
+    .volunteer-card h2 {
+        font-size: 1.5em;
+    }
+
+    .btn-secondary {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header h1 {
+        font-size: 1.5em;
+    }
+
+    .contact-header p {
+        font-size: 0.9em;
+    }
+
+    .info-card,
+    .form-card,
+    .volunteer-card {
+        padding: 20px 15px;
+    }
+
+    .info-card h2,
+    .form-card h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    .contact-item {
+        margin-bottom: 15px;
+    }
+
+    .contact-item i {
+        font-size: 1.2em;
+        margin-right: 10px;
+    }
+
+    .contact-item p {
+        font-size: 0.95em;
+    }
+
+    .form-group label {
+        font-size: 0.9em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+}
